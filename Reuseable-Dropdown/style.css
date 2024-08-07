@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    width: 1020px;
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+
+    & a {
+        padding: 10px 16px;
+        border-radius: 4px;
+        /*default <a> </a> tag is "inline" can't use marigin others. */
+        display: inline-block; 
+        color: #334155;
+        text-decoration: none;
+
+        &:hover {
+            color: #0ea5e9;
+            background-color: #f0f9ff
+        }
+    }
+
+    & .dropdown {
+        position: relative;
+
+        & .dropdown-action {
+            display: flex;
+            align-items: center;
+            padding-right: 10px;
+
+            & .dropdown-icon {
+                stroke: currentColor;
+            }
+        }
+
+        & .dropdown-menu {
+            display: none;
+            list-style: none;
+            padding: 10px 0;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            position: absolute;
+            left: 5px;
+            top: 40px;
+            min-width: 180px;
+            background-color: white;
+
+            &.active {
+                display: block;
+            }
+
+            & a {
+                display: block;
+            }
+        }
+
+    }
+
+}
+
