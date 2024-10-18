@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    background-color: #2C3E50;
+    font-family: 'Arial';
+}
+
+.sideBar {
+    width: 250px;
+    height: 100%;
+    background-color: #E74C3C;
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    right: 0;
+    backdrop-filter: blur(10px);
+    overflow-x: hidden;
+    transition-duration: 0.5s; /* Smooth transition */
+    padding: 1rem 2rem;
+}
+
+.sideBar p {
+    color: aliceblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+}
+
+.sideBar p:hover {
+    opacity: 0.7;
+}
+
+#openSidebarBtn {
+    background-color: #E74C3C;
+    border-style: none;
+    color: aliceblue;
+    padding: 1rem 1.5rem;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+#openSidebarBtn:hover {
+    opacity: 0.8;
+}
+
+#closeSidebarBtn {
+    background-color: #2C3E50;
+    border-style: none;
+    color: aliceblue;
+    padding: 1rem 1.5rem;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#closeSidebarBtn:hover {
+    opacity: 0.85;
+}
+
+
+
+
+
+
