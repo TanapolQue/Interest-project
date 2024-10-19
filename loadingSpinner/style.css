@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.spinner {
+    border-top-color: blue;
+    border-bottom-color: green;
+    border-style: solid;
+    border-width: 15px;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-radius: 50%;
+    width: 128px;
+    height: 128px;
+    animation: spin 1.5s infinite, fade 3s ease-in-out infinite alternate;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);       
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
